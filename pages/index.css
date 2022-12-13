@@ -1,2 +1,126 @@
 @import url(../vendor/normalize.css);
-@import url(../blocks/root/root.css);
+
+.page {
+  width: 1280px;
+  background: #2A2C2F;
+}
+
+.header {
+  
+}
+
+.header__logo {
+  
+}
+
+.header__lang-link {
+  
+}
+/*-----------Новая секция------------*/
+.lead {
+  
+}
+
+.lead__title {
+  
+}
+
+.lead__subtitle {
+  
+}
+
+.lead__image {
+  
+}
+
+.lead__caption {
+  
+}
+/*-----------Новая секция------------*/
+.intro {
+  
+}
+
+.intro__title {
+  
+}
+
+.intro__text {
+  
+}
+
+.intro__list {
+  
+}
+/*-----------Новая секция------------*/
+.photo-grid {
+  
+}
+
+.photo-grid__item {
+  
+}
+/*-----------Новая секция------------*/
+.places {
+  
+}
+
+.place {
+  
+}
+
+.place__title {
+  
+}
+
+.place__image {
+  
+}
+
+.place__website {
+  
+}
+
+.place__website_url-heading {
+  
+}
+
+.place__website_link {
+  
+}
+
+.place__paragraph {
+  
+}
+/*-----------Новая секция------------*/
+.cover {
+  
+}
+
+.cover__title {
+  
+}
+
+.cover__subtitle {
+  
+}
+
+.cover__overlay {
+  
+}
+
+.cover__background {
+  
+}
+/*-----------Новая секция------------*/
+.footer {
+  
+}
+
+.footer__link {
+  
+}
+
+.footer__copyright {
+  
+}
