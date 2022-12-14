@@ -164,36 +164,83 @@
 /*-----------Новая секция------------*/
 .places {
   margin: 0 auto;
-  padding: 92px 148px 0;
+  padding: 12px 148px 0;
   color: #FFF;
 }
 
 .place {
-  
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: auto 484px;
+  grid-template-rows: repeat(3, auto);
+  column-gap: 40px;
+  grid-auto-flow: column;
 }
 
 .place__title {
-  
+  margin: 0;
+  padding: 0;
+  padding-bottom: 48px;
+  justify-self: start;
+  align-self: start;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #FFFFFF;
 }
 
 .place__image {
-  
+  grid-row: span 2;
+  width: 460px;
+  height: 460px;
 }
 
 .place__website {
-  
+  margin: 0;
+  padding: 0;
+  padding-bottom: 46px;
+  justify-self: start;
+  align-self: end;
 }
 
 .place__website_url-heading {
-  
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #AAA;
 }
 
 .place__website_link {
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #FFF;
 }
 
 .place__paragraph {
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  padding-bottom: 26px;
+  color: #FFF;
 }
 /*-----------Новая секция------------*/
 .cover {
