@@ -31,84 +31,141 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: #FFF;
   text-decoration: none;
 }
 
 .header__lang-link_active {
-  text-decoration: underline;
+  border-bottom: 1px solid #FFF;
 }
 /*-----------Новая секция------------*/
 .lead {
-  margin: 0;
+  margin: 0 auto;
   padding: 56px 148px 0;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .lead__title {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 720px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
   font-size: 96px;
   line-height: 100px;
   text-align: center;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .lead__subtitle {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  padding: 32px auto 0;
+  padding-top: 32px;
+  max-width: 640px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .lead__image {
-  padding: 64px 148px 0;
-}
-
-.f1 {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 64px;
   width: 984px;
   height: 615px;
 }
 
 .lead__caption {
-  
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #FFF;
 }
 /*-----------Новая секция------------*/
 .intro {
-  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  padding-top: 92px;
+  color: #FFF;
 }
 
 .intro__title {
-  
+  margin: 0;
+  padding: 0;
+  max-width: 690px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  color: #FFF;
 }
 
 .intro__text {
-  
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  max-width: 690px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  color: #FFF;
 }
 
 .intro__list {
-  
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
+  max-width: 690px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFF;
 }
+
+.intro__list_fact {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 /*-----------Новая секция------------*/
 .photo-grid {
-  color: #FFFFFF;
+  margin: 0;
+  padding: 92px 48px 0;
+  max-width: 1184px;
+  max-height: 671px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+  color: #FFF;
 }
 
 .photo-grid__item {
-  
+  max-width: 284px;
 }
 /*-----------Новая секция------------*/
 .places {
-  color: #FFFFFF;
+  margin: 0 auto;
+  padding: 92px 148px 0;
+  color: #FFF;
 }
 
 .place {
@@ -140,7 +197,7 @@
 }
 /*-----------Новая секция------------*/
 .cover {
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .cover__title {
@@ -160,7 +217,7 @@
 }
 /*-----------Новая секция------------*/
 .footer {
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .footer__link {
