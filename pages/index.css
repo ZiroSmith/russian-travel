@@ -144,7 +144,9 @@
   padding: 0;
   list-style-type: none;
 }
-
+.normal-font {
+  font-weight: 400;
+}
 /*-----------Новая секция------------*/
 .photo-grid {
   margin: 0;
@@ -244,23 +246,46 @@
 }
 /*-----------Новая секция------------*/
 .cover {
+  margin: 0 auto;
+  padding-top: 92px;
+  width: 1184px;
   color: #FFF;
 }
 
 .cover__title {
-  
+  width: 560px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  text-align: center;
+  color: #FFF;
+  z-index: 1;
 }
 
 .cover__subtitle {
-  
+  width: 360px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 1;
 }
 
 .cover__overlay {
-  
+  width: 1184px;
+  background: #2A2C2F;
+  opacity: 0.3;
+  z-index: 1;
 }
 
 .cover__background {
-  
+  width: 1184px;
+  z-index: 2;
 }
 /*-----------Новая секция------------*/
 .footer {
