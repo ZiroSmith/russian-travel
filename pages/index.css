@@ -246,6 +246,7 @@
 }
 /*-----------Новая секция------------*/
 .cover {
+  position: relative;
   margin: 0 auto;
   padding-top: 92px;
   width: 1184px;
@@ -253,6 +254,7 @@
 }
 
 .cover__title {
+  position: relative;
   width: 560px;
   font-family: 'Inter';
   font-style: normal;
@@ -261,10 +263,11 @@
   line-height: 76px;
   text-align: center;
   color: #FFF;
-  z-index: 1;
+  z-index: -1;
 }
 
 .cover__subtitle {
+  position: relative;
   width: 360px;
   font-family: 'Inter';
   font-style: normal;
@@ -272,20 +275,30 @@
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #FFFFFF;
-  z-index: 1;
+  color: #FFF;
+  z-index: -1;
 }
 
 .cover__overlay {
+  position: relative;
   width: 1184px;
   background: #2A2C2F;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.cover__overlay:hover {
   opacity: 0.3;
-  z-index: 1;
 }
 
 .cover__background {
+  position: relative;
   width: 1184px;
+  height: 740px;
+  background-size: cover;
+  background-image: url(../images/cover-trains.jpg);
   z-index: 2;
+
 }
 /*-----------Новая секция------------*/
 .footer {
