@@ -246,28 +246,53 @@
 }
 /*-----------Новая секция------------*/
 .cover {
-  position: relative;
-  margin: 0 auto;
-  padding-top: 92px;
+  background-image: url(../images/cover-trains.jpg);
   width: 1184px;
+  height: 740px;
+  margin: 0 auto;
+  margin-top: 92px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
   color: #FFF;
 }
 
+.cover::after {
+  content: '';
+  width: 1184px;
+  height: 740px;
+  background: #2A2C2F;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.cover:hover::after {
+  opacity: 0.7;
+  transition: 1s;
+}
+
 .cover__title {
-  position: relative;
-  width: 560px;
+  max-width: 560px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
   text-align: center;
+  margin: 245px calc(360px - 96px) 32px;
   color: #FFF;
-  z-index: -1;
+  z-index: 1;
 }
 
 .cover__subtitle {
-  position: relative;
   width: 360px;
   font-family: 'Inter';
   font-style: normal;
@@ -275,40 +300,40 @@
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+  margin: 0 412 245px;
   color: #FFF;
-  z-index: -1;
+  z-index: 1;
 }
 
-.cover__overlay {
-  position: relative;
-  width: 1184px;
-  background: #2A2C2F;
-  opacity: 0.7;
-  z-index: 2;
-}
-
-.cover__overlay:hover {
-  opacity: 0.3;
-}
-
-.cover__background {
-  position: relative;
-  width: 1184px;
-  height: 740px;
-  background-size: cover;
-  background-image: url(../images/cover-trains.jpg);
-  z-index: 2;
-
-}
-/*-----------Новая секция------------*/
 .footer {
+  display: grid;
+  grid-template-columns: 50px 57px 94px 86px 106px auto;
+  gap: 18px;
+  width: 1184px;
+  margin: 0 auto;
+  padding: 92px 0 24px;
   color: #FFF;
 }
 
 .footer__link {
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
 }
 
 .footer__copyright {
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: #FFFFFF;
 }
