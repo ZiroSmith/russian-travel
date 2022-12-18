@@ -5,9 +5,14 @@
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  -webkit-font-smoothing: auto;
-  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%; 
+  text-rendering: optimizeLegibility; 
   background: #2A2C2F;
 }
 
@@ -17,10 +22,27 @@
   justify-items: end;
   align-items: end;
   gap: 18px;
-  margin: 0;
-  padding: 28px 48px 0;
-  max-width: 1184px;
-  width: 100%;
+  margin: 28px auto 0;
+  padding: 0;
+  width: calc(1184 / 1280 * 100%);
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    width: calc(928 / 1024 * 100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: calc(720 / 768 * 100%);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    width: calc(288 / 320 * 100%);
+  }
 }
 
 .header__logo {
@@ -47,12 +69,30 @@
 }
 
 .lead {
-  margin: 57px 148px 0;
+  margin: 57px auto 0;
   padding: 0;
-  max-width: 984px;
-  height: 1005px;
+  width: calc(984 / 1280 * 100%);
   color: #FFF;
 }
+
+@media screen and (max-width: 1024px) {
+  .lead {
+    width: calc(928 / 1024 * 100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead {
+    width: calc(768 / 768 * 100%);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .lead {
+    width: calc(320 / 320 * 100%);
+  }
+}
+
 
 .lead__title {
   margin: 0 auto;
@@ -85,7 +125,6 @@
   margin: 0 auto;
   padding: 0;
   padding-top: 64px;
-  max-width: 984px;
   width: 100%;
 }
 
@@ -110,8 +149,15 @@
   margin-left: 148px;
   max-width: 690px;
   width: 100%;
-  height: 429px;
   color: #FFF;
+}
+
+@media screen and (max-width: 1024px) {
+  .lead {
+    max-width: 690px;
+    margin-top: 92px;
+    margin-left: 48px;
+  }
 }
 
 .intro__title {
@@ -166,8 +212,7 @@
   padding: 92px 0 0;
   display: grid;
   position: relative;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
   gap: 16px;
   max-width: calc(284px * 4 + 16px * 3);
   color: #FFF;
