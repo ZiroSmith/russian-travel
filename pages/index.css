@@ -39,15 +39,24 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .header {
     width: calc(288 / 320 * 100%);
+    grid-template-columns: auto 22px 20px;
+    margin: 16px auto 0;
   }
 }
 
 .header__logo {
   justify-self: start;
   align-self: start;
+  width: 176px;
+}
+
+@media screen and (max-width: 425px) {
+  .header__logo {
+    width: 142px;
+  }
 }
 
 .header__lang-link {
@@ -64,6 +73,14 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 425px) {
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
 .header__lang-link_active {
   border-bottom: 1px solid #FFF;
 }
@@ -78,21 +95,23 @@
 @media screen and (max-width: 1024px) {
   .lead {
     width: calc(928 / 1024 * 100%);
+    margin: 48px auto 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .lead {
     width: calc(768 / 768 * 100%);
+    margin: 48px auto 0;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .lead {
-    width: calc(320 / 320 * 100%);
+    max-width: calc(320 / 320 * 100%);
+    margin: 48px auto 0;
   }
 }
-
 
 .lead__title {
   margin: 0 auto;
@@ -105,6 +124,13 @@
   line-height: 100px;
   text-align: center;
   color: #FFF;
+}
+
+@media screen and (max-width: 425px) {
+  .lead__title {
+    font-size: 40px;
+    line-height: 44px;
+  }
 }
 
 .lead__subtitle {
@@ -121,11 +147,34 @@
   color: #FFF;
 }
 
+@media screen and (max-width: 425px) {
+  .lead__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 16px;
+  }
+}
+
 .lead__image {
   margin: 0 auto;
   padding: 0;
   padding-top: 64px;
   width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .lead__image {
+    width: calc(928 / 1024 * 100%);
+    margin: 48px auto 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead__image {
+    width: calc(768 / 768 * 100%);
+    margin: 48px auto 0;
+  }
 }
 
 .lead__caption {
@@ -150,14 +199,6 @@
   max-width: 690px;
   width: 100%;
   color: #FFF;
-}
-
-@media screen and (max-width: 1024px) {
-  .lead {
-    max-width: 690px;
-    margin-top: 92px;
-    margin-left: 48px;
-  }
 }
 
 .intro__title {
