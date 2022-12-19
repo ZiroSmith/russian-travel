@@ -24,7 +24,7 @@
   gap: 18px;
   margin: 28px auto 0;
   padding: 0;
-  width: calc(1184 / 1280 * 100%);
+  max-width: calc(1184 / 1280 * 100%);
 }
 
 @media screen and (max-width: 1024px) {
@@ -43,7 +43,7 @@
   .header {
     width: calc(288 / 320 * 100%);
     grid-template-columns: auto 22px 20px;
-    padding: 16px auto 0;
+    margin: 16px auto 0;
   }
 }
 
@@ -51,6 +51,18 @@
   justify-self: start;
   align-self: start;
   width: 176px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__logo {
+    padding-left: 9px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -73,16 +85,35 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .header__lang-link {
+    padding-right: 9px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__lang-link {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .header__lang-link {
     font-size: 18px;
     line-height: 20px;
-    text-align: center;
+    margin-top: 15px;
   }
 }
 
 .header__lang-link_active {
   border-bottom: 1px solid #FFF;
+}
+
+@media screen and (max-width: 425px) {
+  .header__lang-link_active {
+    text-decoration: underline;
+    border: none;
+  }
 }
 
 .lead {
@@ -109,7 +140,7 @@
 @media screen and (max-width: 425px) {
   .lead {
     max-width: calc(320 / 320 * 100%);
-    margin: 48px auto 0;
+    margin: 42px auto 0;
   }
 }
 
@@ -288,6 +319,7 @@
 @media screen and (max-width: 425px) {
   .intro__text {
     max-width: 100%;
+    padding-top: 42px;
   }
 }
 
@@ -302,12 +334,6 @@
   font-size: 12px;
   line-height: 18px;
   color: #FFF;
-}
-
-@media screen and (max-width: 425px) {
-  .intro__text {
-    padding-top: 34px;
-  }
 }
 
 .intro__list_fact {
@@ -330,9 +356,17 @@
   color: #FFF;
 }
 
+@media screen and (max-width: 1024px) {
+  .photo-grid {
+    max-width: calc(941 / 1024 * 100%);
+    gap: 14px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .photo-grid {
     max-width: calc(720 / 768 * 100%);
+    gap: 16px;
     padding: 88px 0 0;
   }
 }
@@ -341,6 +375,7 @@
   .photo-grid {
     max-width: calc(288 / 320 * 100%);
     padding: 64px 0 0;
+    gap: 12px;
   }
 }
 
@@ -349,34 +384,41 @@
   height: 100%;
   object-fit: contain;
 }
-/*--------------------------------------------------------WARNING-----------только грубо заданы отступы------*/
+
 .places {
   margin: 0 auto;
-  padding: 12px 148px 0;
+  padding-top: 12px;
+  max-width: calc(984 / 1280 * 100%);
   color: #FFF;
 }
 
 @media screen and (max-width: 1024px) {
   .places {
-    padding: 12px 48px 58px 0;
+    max-width: calc(938 / 1024 * 100%);
+    margin-left: 48px;
+    margin-right:  58px;
+    padding-top: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .places {
-    padding: 15px auto 0;
+    max-width: calc(720 / 768 * 100%);
+    margin: 0 auto;
+    padding-top: 15px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .places {
-    padding: 14px 0 0;
+    max-width: calc(320 / 320 * 100%);
+    margin: 0 auto;
+    padding-top: 14px;
   }
 }
-/*--------------------------------------------------------WARNING-----------*/
-/*--------------------------------------------------------WARNING-----------только грубо заданы размеры------*/
+
 .place {
-  padding-top: 80px;
+  padding-top: 68px;
   display: grid;
   grid-template-columns: auto 484px;
   grid-template-rows: repeat(3, auto);
@@ -389,7 +431,22 @@
   .place {
     max-width: calc(938 / 1024 * 100%);
     grid-template-columns: auto 456px;
-    column-gap: 42px;
+    column-gap: 32px;
+  }
+  .place_kosa {
+    padding-top: 80px;
+  }
+  .place_kolsky {
+    padding-top: 62px;
+  }
+  .place_altai {
+    padding-top: 60px;
+  }
+  .place_baikal {
+    padding-top: 80px;
+  }
+  .place_karelia {
+    padding-top: 80px;
   }
 }
 
@@ -399,15 +456,32 @@
     grid-template-columns: auto 352px;
     column-gap: 28px;
   }
-}
-/*
-@media screen and (max-width: 425px) {
-  .place {
-    max-width: calc(720 / 320 * 100%);
+  .place_kosa {
+    padding-top: 76px;
+  }
+  .place_kolsky {
+    padding-top: 47px;
+  }
+  .place_altai {
+    padding-top: 46px;
+  }
+  .place_baikal {
+    padding-top: 48px;
+  }
+  .place_karelia {
+    padding-top: 48px;
   }
 }
-*/
-/*--------------------------------------------------------WARNING-----------*/
+
+@media screen and (max-width: 425px) {
+  .place {
+    max-width: calc(320 / 320 * 100%);
+    grid-template-columns: repeat(auto-fill, 320px);
+    grid-auto-flow: row;
+    padding-top: 50px;
+  }
+}
+
 .place__title {
   margin: 0;
   padding: 0;
@@ -430,7 +504,7 @@
 
 @media screen and (max-width: 768px) {
   .place__title {
-    max-width: calc(340 / 768 * 100%);
+    max-width: 330px;
     font-size: 42px;
     line-height: 46px;
   }
@@ -438,25 +512,52 @@
 
 @media screen and (max-width: 425px) {
   .place__title {
-    max-width: calc(288 / 320 * 100%);
+    max-width: 288px;
     font-size: 32px;
     line-height: 35px;
-    margin: 0 auto;
+    padding: 0 16px 0;
   }
 }
 
 .place__image {
   grid-row: span 2;
-  width: 460px;
-  height: 460px;
+  max-width: 460px;
+}
+
+@media screen and (max-width: 1024px) {
+  .place__image {
+    max-width: 440px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place__image {
+    max-width: 340px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .place__image {
+    max-width: 320px;
+    grid-row: 3 / 4;
+    padding-bottom: 6px;
+  }
 }
 
 .place__website {
   margin: 0;
   padding: 0;
-  padding-bottom: 47px;
+  padding: 32px 16px;
   justify-self: start;
   align-self: end;
+  
+}
+
+@media screen and (max-width: 425px) {
+  .place__website {
+    grid-row: 2 / 3;
+    padding-left: 16px;
+  }
 }
 
 .place__website_url-heading {
@@ -471,6 +572,12 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #AAA;
+}
+
+@media screen and (max-width: 425px) {
+  .place__website_url-heading {
+    padding-bottom: 12px;
+  }
 }
 
 .place__website_link {
@@ -496,6 +603,26 @@
   line-height: 163%;
   padding-bottom: 26px;
   color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 163%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .place__paragraph {
+    max-width: 288px;
+    font-size: 16px;
+    line-height: 163%;
+    margin: 0;
+    padding: 25px 16px 0;
+  }
+  .place__paragraph-red {
+    max-width: 280px;
+  }
 }
 
 .cover {
