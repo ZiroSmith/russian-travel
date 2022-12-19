@@ -29,13 +29,13 @@
 
 @media screen and (max-width: 1024px) {
   .header {
-    width: calc(928 / 1024 * 100%);
+    max-width: calc(946 / 1024 * 100%);
   }
 }
 
 @media screen and (max-width: 768px) {
   .header {
-    width: calc(720 / 768 * 100%);
+    max-width: calc(720 / 768 * 100%);
   }
 }
 
@@ -43,7 +43,7 @@
   .header {
     width: calc(288 / 320 * 100%);
     grid-template-columns: auto 22px 20px;
-    margin: 16px auto 0;
+    padding: 16px auto 0;
   }
 }
 
@@ -88,20 +88,20 @@
 .lead {
   margin: 57px auto 0;
   padding: 0;
-  width: calc(984 / 1280 * 100%);
+  max-width: calc(984 / 1280 * 100%);
   color: #FFF;
 }
 
 @media screen and (max-width: 1024px) {
   .lead {
-    width: calc(928 / 1024 * 100%);
+    max-width: calc(928 / 1024 * 100%);
     margin: 48px auto 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .lead {
-    width: calc(768 / 768 * 100%);
+    max-width: calc(768 / 768 * 100%);
     margin: 48px auto 0;
   }
 }
@@ -123,6 +123,7 @@
   font-size: 96px;
   line-height: 100px;
   text-align: center;
+  max-width: 720px;
   color: #FFF;
 }
 
@@ -145,6 +146,7 @@
   line-height: 36px;
   text-align: center;
   color: #FFF;
+  max-width: 640px;
 }
 
 @media screen and (max-width: 425px) {
@@ -165,15 +167,19 @@
 
 @media screen and (max-width: 1024px) {
   .lead__image {
-    width: calc(928 / 1024 * 100%);
-    margin: 48px auto 0;
+    padding-top: 56px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .lead__image {
-    width: calc(768 / 768 * 100%);
-    margin: 48px auto 0;
+    padding-top: 56px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .lead__image {
+    padding-top: 40px;
   }
 }
 
@@ -188,7 +194,20 @@
   line-height: 14px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  max-width: 160px;
   color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+  .lead__caption {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .lead__caption {
+    padding-left: 16px;
+  }
 }
 
 .intro {
@@ -199,6 +218,18 @@
   max-width: 690px;
   width: 100%;
   color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    width: calc(720 / 768 * 100%);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .intro {
+    width: calc(288 / 320 * 100%);
+  }
 }
 
 .intro__title {
