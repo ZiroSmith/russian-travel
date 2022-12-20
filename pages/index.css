@@ -655,8 +655,9 @@
 
 @media screen and (max-width: 425px) {
   .cover {
-    max-width: calc(200 / 320 * 100%);
+    max-width: 100%;
     min-height: 200px;
+    margin: 66px 0 64px;
   }
 }
 
@@ -727,21 +728,20 @@
 
 @media screen and (max-width: 1024px) {
   .cover__subtitle {
-    max-width: calc(360 / 1024 * 100%);
+    max-width: 360px;
     min-height: 66px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .cover__subtitle {
-    max-width: calc(288 / 480 * 100%);
+    max-width: 288px;
     min-height: 48px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .cover__subtitle {
-    max-width: calc(288 / 425 * 100%);
     min-height: 70px;
     font-size: 14px;
     line-height: 16px;
