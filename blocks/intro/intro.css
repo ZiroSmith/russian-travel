@@ -1,0 +1,30 @@
+.intro {
+  margin: 0;
+  padding: 0;
+  margin-top: 92px;
+  margin-left: 148px;
+  max-width: 690px;
+  width: 100%;
+  color: #FFF;
+  background: #2A2C2F;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro {
+    margin-left: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    max-width: calc(720 / 768 * 100%);
+    margin: 88px auto 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .intro {
+    max-width: calc(288 / 320 * 100%);
+    margin: 64px auto 0;
+  }
+}

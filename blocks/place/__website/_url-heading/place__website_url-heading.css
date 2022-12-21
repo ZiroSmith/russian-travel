@@ -1,0 +1,19 @@
+.place__website_url-heading {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #AAA;
+}
+
+@media screen and (max-width: 425px) {
+  .place__website_url-heading {
+    padding-bottom: 12px;
+  }
+}

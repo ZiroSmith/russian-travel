@@ -1,0 +1,10 @@
+.header__lang-link_active {
+  border-bottom: 1px solid #FFF;
+}
+
+@media screen and (max-width: 768px) {
+  .header__lang-link_active {
+    text-decoration: underline;
+    border: none;
+  }
+}

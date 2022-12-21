@@ -1,0 +1,35 @@
+.footer {
+  display: grid;
+  grid-template-columns: 50px 57px 94px 86px 106px auto;
+  gap: 18px;
+  max-width: 1184px;
+  margin: 0 auto 24px;
+  padding: 0;
+  color: #FFF;
+  background: #2A2C2F;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    max-width: calc(928 / 1024 * 100%);
+    padding: 0 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    max-width: calc(720 / 768 * 100%);
+    padding: 0 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    max-width: calc(186 / 320 * 100%);
+    grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+    margin-left: 16px;
+  }
+}
