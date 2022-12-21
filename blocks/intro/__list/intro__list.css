@@ -1,6 +1,7 @@
 .intro__list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
   padding-top: 33px;
   max-width: 690px;
   font-family: 'Inter';
