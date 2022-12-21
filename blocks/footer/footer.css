@@ -23,7 +23,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 620px) {
   .footer {
     max-width: calc(186 / 320 * 100%);
     grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
