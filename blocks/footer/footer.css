@@ -1,6 +1,6 @@
 .footer {
   display: grid;
-  grid-template-columns: 50px 57px 94px 86px 106px auto;
+  grid-template-columns: repeat(5, max-content) auto;
   gap: 18px;
   max-width: 1184px;
   margin: 0 auto 24px;

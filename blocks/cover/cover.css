@@ -4,7 +4,9 @@
   min-height: 740px;
   margin: 92px auto 92px;
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

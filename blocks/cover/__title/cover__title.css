@@ -7,7 +7,6 @@
   line-height: 76px;
   text-align: center;
   margin: 0 auto;
-  padding-top: 245px;
   color: #FFF;
   z-index: 2;
 }
@@ -16,7 +15,6 @@
   .cover__title {
     max-width: calc(560 / 1024 * 100%);
     min-height: 152px;
-    padding-top: 195px;
   }
 }
 
@@ -24,7 +22,6 @@
   .cover__title {
     max-width: calc(560 / 480 * 100%);
     min-height: 152px;
-    padding-top: 115px;
   }
 }
 
@@ -34,6 +31,6 @@
     min-height: 70px;
     font-size: 32px;
     line-height: 35px;
-    padding-top: 33px;
+    padding-top: 24px;
   }
 }
